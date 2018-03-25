@@ -6,6 +6,7 @@ var express     = require("express"),
     methodOverride = require("method-override"),
     expressSanitizer = require("express-sanitizer");
 
+//mongoose.connect("mongodb://localhost/restful_blog_app", {useMongoClient: true});
 mongoose.connect("mongodb://hitesh:password@ds239177.mlab.com:39177/hiteshblog", {useMongoClient: true});
 app.set("view engine", "ejs");
 app.use(express.static("public"));
